@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            :root {
+                --color-clifford: #da373d;
+            }
+        }
+    </style>
+</head>
+
+<body class="md:bg-[#FACC15]">
+    <div class="grid grid-cols-3 gap-4 text-center">
+        <div class="row-span-3 p-6 rounded-lg">
+            <img class="w-150 h-full" src="assets/pow.avif" alt="">
+        </div>
+        <div class="col-span-2">
+            <h1 class="text-2xl md:text-3xl font-semibold m-6 bg-white rounded-lg p-4">
+                "Des hommes solidaires pour les droits des femmes."
+            </h1>
+            <p class="text-xl md:text-xl py-6 rounded-lg">
+                "Parce que l'égalité n'a pas de genre, nous agissons ensemble."
+            </p>
+            <p class="text-xl text-gray-700 md:text-xl font-semibold py-6 rounded-lg">
+                - Luttons côte à côte pour un monde où les droits des femmes sont respectés.
+            </p>
+        </div>
+        <div class="col-span-2 row-span-2 rounded-lg">
+            <img class="w-150 h-full p-6" src="assets/coc.jpg" alt="">
+        </div>
+    </div>
+    
+    <!-- Témoignages -->
+    <div class="swiper-slide bg-gray-300 p-6 rounded-lg shadow-lg text-center">
+        <h2 class="text-2xl font-bold">Nos Témoignages</h2>
+        <img class="h-50 w-50" src="assets/denis.jpeg" alt="">
+        <p class="text-lg font-semibold">Denis Mukwege</p>
+        <span class="text-gray-700">Un Héros des Droits des Femmes.
+            Denis Mukwege est un gynécologue congolais et un militant infatigable pour les droits des femmes, mondialement reconnu pour son combat contre les violences sexuelles utilisées comme armes de guerre.
+            Son travail lui vaut de nombreuses distinctions, dont le Prix Nobel de la Paix en 2018, qu’il reçoit aux côtés de la militante yazidie Nadia Murad.
+            Il utilise sa notoriété pour dénoncer l'impunité des criminels et réclamer justice pour les victimes.
+        </span>
+    </div>
+    
+    <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+        <img class="h-50 w-50" src="assets/mbembe.jpeg" alt="">
+        <p class="text-lg font-semibold">Achille Mbembe</p>
+        <span class="text-gray-700">Né au Cameroun en 1957, Achille Mbembe a étudié en France avant d’enseigner aux États-Unis et en Afrique du Sud.
+            Il est aujourd’hui une figure intellectuelle influente sur les questions de démocratie, de race et de globalisation.
+            À travers ses recherches, il contribue indirectement à la réflexion sur les droits des femmes en liant leur émancipation à des dynamiques plus vastes de libération et de justice sociale.
+        </span>
+    </div>
+    
+    <div class="swiper-slide bg-gray-300 p-6 rounded-lg shadow-lg text-center">
+        <img class="h-50 w-50" src="assets/gilbert.jpeg" alt="">
+        <p class="text-lg font-semibold">Gilbert Houngbo</p>
+        <span class="text-gray-700">À travers ses fonctions à l’OIT et au Programme des Nations Unies pour le Développement (PNUD), il œuvre pour l’inclusion économique des femmes, la lutte contre les discriminations au travail et la promotion de conditions de travail décentes.
+            Il plaide pour l’égalité salariale, la lutte contre le harcèlement et le renforcement des droits sociaux des travailleuses, notamment dans les pays en développement.
+            </span>
+    </div>
+
+    <!-- Partenaires -->
+    <div class="relative w-full overflow-hidden bg-yellow-150 py-8">
+        <h2 class="text-center text-2xl font-bold">Nos Partenaires</h2>
+        <div class="flex space-x-6 animate-marquee">
+            <div class="flex-none w-20 h-20 bg-white p-4 shadow-md">$
+                <img class="w-16 h-16" src="assets/mers.jpg" alt="">
+            </div>
+            <div class="flex-none w-20 h-20 bg-white p-4 rounded-lg shadow-md">
+                <img class="w-16 h-16" src="assets/LyTech.jpg" alt="">
+            </div>
+            <div class="flex-none w-20 h-20 bg-white p-4 rounded-lg shadow-md">
+                <img class="w-16 h-16" src="assets/gomy.jpg" alt="">
+            </div>
+            <div class="flex-none w-20 h-20 bg-white p-4 rounded-lg shadow-md">
+                <img class="w-16 h-16" src="assets/daip.png" alt="">
+            </div>
+            <div class="flex-none w-20 h-20 bg-white p-4 rounded-lg shadow-md">
+                <img class="w-16 h-16" src="assets/e2c.png" alt="">
+            </div>
+            <div class="flex-none w-20 h-20 bg-white p-4 rounded-lg shadow-md">
+                <img class="w-16 h-16" src="assets/celia2.gif" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            animation: marquee 15s linear infinite;
+        }
+    </style>
+</body>
+</html>
