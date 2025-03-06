@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>partenaiares</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <style>
+/* Classe commune pour les deux éléments */
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Spécificités pour .header-content */
+.header-content {
+    background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent blanc */
+}
+
+/* Spécificités pour .footer-content */
+.footer-content {
+    background: rgba(255, 255, 255, 0.5); 
+    color: white; /* Texte en blanc pour un meilleur contraste */
+}
+        /* Animation pour les cartes */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body { font-family: 'Roboto', sans-serif; }
+    </style>
+
+</head>
+<body class="bg-gray-900">
+    <div class="md:flex flex-row md:bg-[url('./images/couverture.jpg')] bg-cover bg-center bg-no-repeat h-screen h-100 w-full">
+        
+            <div class="bg-image flex items-center justify-center w-full h-full">
+                <div class="header-content">
+                    <img src="images/avf.png" alt="logo" class="w-90 h-60">
+                </div>
+            </div>
+    </div>
+   <!-- je veux mettre une div qui aura deux colonnes, une colonne a gauche avec du texte et une a droite avec une image tout avec un bg blanc -->
+   
+   <div class="bg-gray-800 text-white">
+    <div class="text-center py-10">
+        <h1 class="text-4xl font-bold mb-2">NOS PARTENAIRES</h1>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+        <!-- Carte de service -->
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+            <a href="https://ci.ambafrance.org/" target="_blank" class="space-x-4">
+                <!-- Logo France -->
+                <img src="./images/france.png" alt="Logo France" class="w-40 h-30 relative  left-6">
+                <!-- Titre -->
+                 <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">Ambassade de France</h2>
+             
+            </a>
+        
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    C’est avec l’appui de l’ambassade de France que nous avons réalisé un grand rassemblement d’ONG féministes 
+                    à l’occasion des 16 jours d’activisme contre les violences faites aux femmes et aux filles.
+                    Dix-sept organisations de la société civile y ont participé et 224 personnes ont été sensibilisées 
+                    aux violences basées sur le genre lors de cet événement.
+                </p>
+        
+                <!-- Bouton
+                <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+        
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+            <a href="https://www.engenderhealth.org/" target="_blank" class="space-x-4">
+                <img src="./images/Logo-Engender-768x467.webp" alt="Logo France" class="w-40 h-30 relative  left-6">
+
+                <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">EngenderHealth</h2>
+            </a>
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    EngenderHealth travaille en Côte d’Ivoire depuis 2008. Cette organisation internationale soutient le Ministère de la Santé et les organisations locales qui travaillent pour améliorer les prestations des services de santé sexuelle et reproductive (SSR).
+
+                    EngenderHealth plaide pour un meilleur accès à des soins d’avortement complets, en mettant l’accent sur l’amplification de la voix des femmes et des jeunes, ainsi que sur le soutien d’efforts de coordination nationaux et régionaux efficaces.
+                </p>
+        
+                <!-- Bouton -->
+                <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+            <a href="https://www.gov.uk/world/organisations/british-embassy-abidjan" target="_blank" class="space-x-4">
+            <img src="./images/UK-AID_RGB_AW-768x662.webp" alt="Logo France" class="w-25 h-25 relative  left-6">
+        
+            <!-- Titre -->
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">Ambassade Royaume-Uni en Côte d'd’Ivoire</h2>
+        </a>
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    Dans le cadre de son engagement en faveur de la défense des droits des femmes, l’Ambassade Royaume-Uni à Abidjan a généreusement financé l’équipement du centre de prise en charge ainsi que du foyer d’hébergement.
+
+                Cette action reflète l’engagement de UK Aid, l’organisme britannique de développement international, à soutenir les initiatives de lutte contre les violences basées sur le genre dont les femmes et les enfants sont les principales victimes.
+                </p>
+                   <!-- Bouton -->
+                <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+            <a href="https://www.afd.fr/fr" target="_blank" class="space-x-4">
+            <img src="./images/LOGO-FEA-feministes.webp" alt="Logo France" class="w-25 h-25 relative  left-6">
+        
+            <!-- Titre -->
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">Féministes en Action</h2>
+        </a>
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    Féministes en Action est une initiative qui a pour objectif de donner aux organisations féministes de 30 pays des Suds des moyens d’agir et de construire un monde plus respectueux des droits des femmes et des filles.
+                    Dans le cadre du FSOF (le Fonds de Solidarité avec les Organisations Féministes), co-piloté par le Ministère de l’Europe et des Affaires Étrangères (MEAE) et l’Agence Française de Développement (AFD), l’initiative Féministes en Action veut proposer des 
+                    réponses au manque de ressources et de considération dont souffrent la plupart des organisations féministes des Suds.
+                </p>
+        
+                <!-- Bouton -->
+                <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+             <a href="https://www.lamaisondesfemmes.fr/" target="_blank" class="space-x-4">
+                <img src="./images/Soutien-amical-LMDF-StDenis.png" alt="Logo France" class="w-40 h-30 relative  left-6">
+             <!-- Titre -->
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">La Maison des femmes de Saint-Denis</h2>
+        </a>
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    La Maison des femmes de Saint-Denis est un lieu de prise en charge unique des femmes en difficulté ou victimes de violences. Ce centre d’aide et d’accompagnement est une solution concrète et pragmatique à des problématiques spécifiques, qui touchent particulièrement les femmes en situation de forte précarité et auxquelles les structures médicales de plus grande envergure ne peuvent pas répondre.
+                    La Maison des femmes, c’est une unité du Centre hospitalier de Saint-Denis, une structure médico-sociale où des soignants et des acteurs du monde de la police, de la justice et du droit, mais aussi des thérapeutes, des artistes et des sportifs, coopèrent pour accompagner les patientes vers la guérison et l’autonomie.
+                </p>
+        
+                <!-- Bouton -->
+                <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+        <div class="card bg-white text-gray-900 rounded-2xl p-8 flex flex-col relative shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <!-- Logo en haut à gauche -->
+             <a href="https://famille.gouv.ci/mffe/" target="_blank" class="space-x-4">
+                <img src="./images/logo_mffe_3.webp" alt="Logo France" class="w-40 h-30 relative  left-6">
+             <!-- Titre -->
+            <h2 class="text-3xl font-semibold text-gray-700 mb-6 pl-20 mt-2">Ministère de la Femme, de la Famille et de l'Enfant</h2>
+            </a>
+            <!-- Contenu principal -->
+            <div class="flex flex-col space-y-6">
+                <p class="text-gray-600 leading-relaxed">
+                    Le Ministère de la Femme, de la Famille et de l'Enfant en Côte d'Ivoire est une institution gouvernementale dédiée à la promotion des droits et du bien-être des femmes, 
+                    des familles et des enfants. Il œuvre pour l'autonomisation des femmes, la protection des enfants et le renforcement des familles à travers des politiques, programmes et initiatives visant à réduire les inégalités de genre, 
+                    lutter contre les violences basées sur le genre et promouvoir l'éducation et la santé des enfants.
+                </p>
+        
+                <!-- Bouton -->
+                <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 self-end">
+                    SUITE
+                </button> -->
+            </div>
+        </div>
+    </div>
+
+   
+    
+    
+     <div class="md:flex flex-row md:bg-[url('./images/capture.png')] bg-cover bg-center bg-no-repeat h-screen h-50 w-full">
+        
+            <div class="bg-image flex items-center justify-center w-full h-full">
+            <div class="footer-content text-center py-10 items-center ">
+                <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+                    Consultez la liste des organisations de défense </br>des droits des femmes en Côte d'Ivoire !
+                </h2>
+                <div>
+                    <a href="./images/Cartographie_ODDF_intervenants_en_CI_AOUT_2024.pdf" target="_blank" 
+                       class="inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-md shadow-md transition-all hover:bg-orange-600 hover:shadow-lg">
+                        Prenez une copie
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="relative flex justify-center mb-[-30px]">
+                        <div class="bg-white p-4 rounded-full shadow-lg relative z-50 p-4">
+                            <img src="./images/avIf.png" alt="Logo" class="w-20 h-10">
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 pt-16 pb-8 mx-4 mb-4 p-4">
+                        <div class="container mx-auto px-4 flex flex-wrap justify-around items-start">
+                            <!-- Donation Section -->
+                            <div class="text-center mb-4">
+                                <div class="flex justify-center text-3xl text-black mb-2">❤️</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-2">NOS PARTENAIRES</h3>
+                                <p class="text-gray-700 mb-4">Votre don participe à créer des changements durables.</p>
+                                <button class="bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded-md font-bold shadow-md">
+                                    JE VEUX CONTACTER UN PARTENAIRE
+                                </button>
+                            </div>
+                            <!-- Newsletter Section -->
+                            <div class="text-center mb-4">
+                                <div class="flex justify-center text-3xl text-black mb-2">✉️</div>
+                                <h3 class="text-lg font-bold text-gray-800 mb-2">RESTEZ INFORMÉ</h3>
+                                <p class="text-gray-700 mb-4">Recevez notre e-newsletter tous les mois.</p>
+                                <button class="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded-md font-bold shadow-md">
+                                    SUIVEZ-VOUS
+                                </button>
+                            </div>
+                                    <div class="flex flex-col items-center">
+                                        <div class="text-3xl text-black mb-2">📍</div>
+                                        <h3 class="text-lg font-bold text-gray-800 mb-2">CONTACTEZ-NOUS</h3>
+                                        <p class="text-sm text-gray-600">Triechville, LPIA E2C-TIC<br>Abidjan, Rue 225<br>Tél.: 0712354105<br>Sans frais: 2725252525</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+</body>
+</html>
