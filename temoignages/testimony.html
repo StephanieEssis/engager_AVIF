@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .animate-slide-in-left {
+        animation: slideInLeft 1s ease-out forwards;
+      }
+
+      .animate-slide-in-right {
+        animation: slideInRight 1s ease-out forwards;
+      }
+
+        .vertical {
+            border-left: 5px solid white;
+            height: 200px;
+        }
+    </style>
+  </head>
+  <body class="bg-white">
+   
+    <div>
+      <div class="relative text-center text-sm bg-blue-400 bg-[url('assets/images/fond.png')] bg-cover h-screen mb-4">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative p-70 text-white z-10">
+          <h1 class="text-5xl font-bold">Témoignages des hommes alliés</h1>
+          <p class="text-2xl">Ici vous trouverez quelques témoignages des hommes alliés aux droits de la femme</p>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container mx-auto px-4 py-8 ">
+      <div class="flex flex-col md:flex-row justify-between items-center p-4 rounded-3xl gap-8 bg-[black]">
+        
+        <div class="w-full md:w-1/2 animate-slide-in-left text-center">
+          <img
+            src="assets/images/barack.avif"
+            alt="homme allié"
+            class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+          />
+          <div class="mt-4 bg-white bg-opacity-75 p-2 w-30 rounded-lg inline-block ">
+            <strong class="text-sm font-bold text-black">Barack Obama</strong>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2  bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg  shadow-lg animate-slide-in-right">
+          <p class="text-sm ">
+            Il n'y a pas de pays qui réussisse sans l'égalité des sexes. L'égalité des sexes est une condition préalable à la prospérité.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center p-6 rounded-3xl gap-8 bg-[black] mt-8">
+        <div class="w-full md:w-1/2 bg-[#fff7c5] p-6  bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg shadow-lg animate-slide-in-left">
+          <p class="text-sm">
+            <strong>Lutte contre la violence à l'égard des femmes :</strong> Il a soutenu des initiatives visant à combattre la violence basée sur le genre et a encouragé les gouvernements à adopter des lois pour protéger les droits des femmes. <br>
+            <strong>Éducation des filles :</strong> Annan a plaidé pour l'éducation des filles, considérant cela comme un élément crucial pour le progrès des sociétés. Il a insisté sur le fait que l'éducation est un droit fondamental.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 animate-slide-in-right text-center">
+          <img
+            src="assets/images/koffi.jpg"
+            alt="homme allié"
+            class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+          />
+          <div class="mt-4 bg-white bg-opacity-75 p-2 w-30 rounded-lg inline-block">
+            <strong class="text-sm font-bold text-black">Koffi Annan</strong>
+          </div>
+        </div>
+        <div class= "vertical"></div>
+        <div class="flex flex-col md:flex-row justify-between items-center p-4 rounded-3xl gap-8 bg-[black]">
+        
+          <div class="w-full md:w-1/2 animate-slide-in-left text-center">
+            <img
+              src="assets/images/Lamine-Sow.jpg"
+              alt="homme allié"
+              class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+            />
+            <div class="mt-4 bg-white bg-opacity-75 p-2 w-50 rounded-lg inline-block ">
+              <strong class="text-sm font-bold text-black">Mamadou Lamine Sow</strong>
+            </div>
+          </div>
+  
+          <div class="w-full md:w-1/2  bg-[#fff7c5] p-6  bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg  shadow-lg animate-slide-in-right">
+            <p class="text-sm">
+              <strong>Égalité des sexes :</strong> Sow souligne l'importance de l'égalité entre les sexes comme un droit fondamental et essentiel au développement de la société. <br>
+              <strong>Participation des femmes : </strong>Il insiste sur la nécessité d'inclure les femmes dans tous les aspects de la vie politique, économique et sociale, affirmant que leur contribution est cruciale pour un progrès durable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center p-6 rounded-3xl gap-8 bg-[black] mt-8">
+      <div class="w-full md:w-1/2 bg-[#fff7c5]  bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg shadow-lg animate-slide-in-left">
+        <p class="text-sm">
+          <strong>Égalité des droits :</strong> Diop plaide pour l'égalité des droits entre les sexes, soulignant que les femmes doivent avoir les mêmes opportunités que les hommes dans tous les domaines, y compris le travail et la politique. <br>
+          <strong>Lutte contre la violence :</strong> Il dénonce la violence faite aux femmes et appelle à des actions concrètes pour protéger les victimes et punir les agresseurs.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 animate-slide-in-right text-center">
+        <img
+          src="assets/images/Boubacar Boris Diop.avif"
+          alt="homme allié"
+          class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+        />
+        <div class="mt-4 bg-white bg-opacity-75 p-2 w-40 rounded-lg inline-block">
+          <strong class="text-sm font-bold text-black">Boubacar Boris Diop</strong>
+        </div>
+      </div>
+      <div class= "vertical"></div>
+      <div class="flex flex-col md:flex-row justify-between items-center p-4 rounded-3xl gap-8 bg-[black]">
+      
+        <div class="w-full md:w-1/2 animate-slide-in-left text-center">
+          <img
+            src="assets/images/Gilbert Houngbo.jpg"
+            alt="homme allié"
+            class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+          />
+          <div class="mt-4 bg-white bg-opacity-75 p-2 w-40 rounded-lg inline-block ">
+            <strong class="text-sm font-bold text-black">Gilbert Houngbo</strong>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2  bg-[#fff7c5] bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg  shadow-lg animate-slide-in-right">
+          <p class="text-sm">
+            <strong>Autonomisation économique :</strong> Il souligne que l'autonomisation économique des femmes est essentielle pour le développement durable. Cela inclut l'accès à des emplois décents et à des opportunités d'entrepreneuriat. <br>
+            <strong>Participation politique :</strong> Il plaide pour une représentation accrue des femmes dans les processus décisionnels, affirmant que leur voix est essentielle pour une société équitable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between items-center p-6 rounded-3xl gap-8 bg-[black] mt-8">
+    <div class="w-full md:w-1/2 bg-[#fff7c5] bg-gradient-to-b from-[#facc15] to-yellow-50 p-6 rounded-lg shadow-lg animate-slide-in-left">
+      <p class="text-sm">
+        <strong>Décolonisation des esprits : </strong>Mbembe souligne l'importance de décoloniser les mentalités pour lutter contre les stéréotypes de genre. Il appelle à une revalorisation des contributions des femmes dans l'histoire et la culture africaines. <br>
+<strong>Intersectionnalité :</strong> Il met en avant la nécessité de comprendre les droits des femmes dans un cadre intersectionnel, reconnaissant que les femmes vivent des expériences différentes selon leur race, classe sociale et origine géographique.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 animate-slide-in-right text-center">
+      <img
+        src="assets/images/Achille Mbembe.jpg"
+        alt="homme allié"
+        class="max-w-xs w-50 h-50 object-cover rounded-[100%] shadow-lg mx-auto"
+      />
+      <div class="mt-4 bg-white bg-opacity-75 p-2 w-35 rounded-lg inline-block">
+        <strong class="text-sm font-bold text-black">Achille Mbembe</strong>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center p-4 rounded-3xl gap-8 bg-[black]">
+    </div>
+  </body>
+</html>
